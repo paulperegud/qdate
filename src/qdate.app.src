@@ -2,10 +2,12 @@
  [
   {description, "Simple Date and Timezone handling for Erlang"},
   {vsn, "0.4.0-pre"},
-  {registered, []},
+  {registered, [qdate_sup]},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+		  erlware_commons,
+		  erlang_localtime
                  ]},
   {mod, { qdate_app, []}},
   {env, []}
